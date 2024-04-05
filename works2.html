@@ -132,37 +132,30 @@
       <main class="main">
         <div class="main__wrap">
           <div class="main__imgbox">
-            <img src="./image/luchy.png" alt="モックアップ写真" />
+            <img src="./image/work2/PORTFOLIO.png" alt="モックアップ写真" />
           </div>
           <section class="performance">
             <div class="performance__box">
               <h2 class="performance__title">作品名</h2>
-              <p>SelectShopLuchy</p>
+              <p>OKYMPORTFOLIO</p>
             </div>
             <div class="performance__box">
               <h2 class="performance__title">サイトリンク</h2>
               <a
                 class="performance__link"
-                href="https://shopluchy.jp/"
+                href="https://okayu.icurus.jp/Portfolio/top.html"
                 target="_blank"
                 rel="noopener noreferrer"
                 >ショップサイト</a
               >
-              <a
-                class="performance__link"
-                href="https://shopluchy.jp/blog"
-                target="_blank"
-                rel="noopener noreferrer"
-                >ブログ</a
-              >
             </div>
             <div class="performance__box">
               <h2 class="performance__title">制作期間</h2>
-              <p>4ヶ月</p>
+              <p>１ヶ月</p>
             </div>
             <div class="performance__box">
               <h2 class="performance__title">サイトジャンル</h2>
-              <p>EC サイト</p>
+              <p>ポートフォリオ</p>
             </div>
             <div class="performance__box">
               <h2 class="performance__title">使用ツール</h2>
@@ -182,6 +175,8 @@
                 <li>Symfony</li>
                 <li>WordPress</li>
                 <li>BEM</li>
+                <li>pickr</li>
+                <li>gsap</li>
                 <li>swiper</li>
                 <li>EC-CUBE</li>
               </ul>
@@ -191,160 +186,122 @@
           <section class="site">
             <div class="site__buttons">
               <button class="site__active">スマートフォン</button>
-              <button>タブレット</button>
               <button>パソコン</button>
             </div>
             <div class="site__scroll">
-              <img src="./image/WebP/スマートフォン.webp" alt="サイト内容" />
+              <img
+                src="./image/WebP/works2/スマートフォン.webp"
+                alt="サイト内容"
+              />
             </div>
           </section>
           <section class="initially">
             <div class="initially__box">
-              <h2 class="initially__title">お店について</h2>
+              <h2 class="initially__title">制作目的について</h2>
               <p>
-                三重県津市大門ピッチャーズビルにあるお店です。建物はコンクリートのおしゃれな建物となっております。商品はアウトドアとエスニック系の洋服が置いてあるセレクトショップです。他にもアクセサリーや革製品やオリジナル商品などのアイテム展開があります。お店にchillくんという犬がいてとても可愛いです。
+                今回は目標を2つ設定しました。フルスクリーンで作品の紹介をする。アクセシビリティのボタンを表示するです。今回はJavascriptのライブラリをたくさん使用し、良いサイトを作ろうとも考えました。今回は新しいことに挑戦しつつ前から少しやりたかった、フルスクリーンのサイトと、最近気になっていたアクセシビリティに考慮したサイトの制作に特化しました。
               </p>
             </div>
             <div class="initially__box">
-              <h2 class="initially__title">要望</h2>
-              <p>初めの段階の要望としましては、３つありました。</p>
-              <ul>
-                <li>・エスニック感を出さずにシンプルなサイトがいい。</li>
-                <li>・ブログをアップしたい。（出店やセール告知を行いたい）</li>
-                <li>・オススメ商品欄が欲しい。</li>
-              </ul>
-              <p>あとのデザイン等は全てお任せで良いとの事でした。</p>
-            </div>
-            <div class="initially__box">
-              <h2 class="initially__title">サイト制作にあたって</h2>
+              <h2 class="initially__title">制作したときの注意点</h2>
               <p>
-                サイト制作にあたって、新たな事をするのでまずECプラットフォームを調べ始めました。次にどんな事ができるのか調べました。EC-CUBEを使用する理由は日本のプラットフォームというのも大きかったです。EC-CUBEではPHPフレームワークはSymfonyを使用するので、1年生の時にphpの学習はないのでまずはphpの基礎勉強とSymfonyの書き方の基礎を3週間程度学びました。その後EC-CUBEに触れ始めました。EC-CUBEのコミュニティ・勉強会に何度も参加しなんとか作り上げてきました。
+                今回はアクセシビリティを組むこととjsのライブラリを使用することからまずは構成をどのようにするかから考えて作りました。特にアクセシビリティで操作する面のhtmlとcssの書き方は普段よりもっと考えて書くようにしました。正直今までここまでhtmlで悩んだのは初めてでした。変数の入れ子を作り文字、フォントサイズやpaddingやmarginはrem,em,vh。また必要に応じてcalc,maxなど指定方法などの書き方で作成しました。今回は画像が大きいということもあり画像の表示方法もサイズ調整に悩みました。 またボタンのシステムを作成するのにJavascriptの量が多くなるので、関数で書きコード量を減らすように心がけました。
               </p>
             </div>
             <div class="initially__box">
-              <h2 class="initially__title">サイト紹介</h2>
+              <h2 class="initially__title">Javascript</h2>
               <p>
-                サイト紹介はPCのサイトを使用してサイトの紹介を行っていきます。
+                ほとんどを関数化してなるべくコード数の削減とメンテナンス性の優れたコードを書くことを意識しました。chatgptはたくさん使いましたが、コードを書くうえで理解できないところは調べて知見を広げていくこともしました。またまた、jsのライブラリは英語のドキュメントとAIを駆使しながら作成しました。正直ライブラリはドキュメントがあるうえで更に、機能性が重充実しているのですごく良いと感じました。
               </p>
+            </div>
+            <div class="initially__box">
+              <h2 class="initially__title">aboutページ</h2>
+              <p>
+                aboutページはなるべく伝えるべき面は先に伝え雰囲気を伝えた後、この業界で働きたいと思った経緯、目標、僕の生きがいの趣味について書いてあります。すごく長文ですが良ければ見ていただきたいです。 また静的サイト過ぎると面白くないなと感じ、gsapを使用して経歴のところに少しだけ動きをつけています。
+              </p>
+            </div>
+            <div class="initially__box">
+              <h2 class="initially__title">アクセシビリティのボタン</h2>
+              <p>アクセシビリティボタンについて解説していきたいと思います。</p>
               <div class="introduction">
                 <div class="introduction__card">
-                  <h3 class="introduction__title">ファーストビュー</h3>
+                  <h3 class="introduction__title">ボタンリスト</h3>
                   <div class="introduction__imgbox">
                     <img
-                      src="./image/WebP/first-viw.webp"
-                      alt="ファーストビュー"
+                      src="./image/work2/アクセシビリティMenu.png"
+                      alt="アクセシビリティ"
                     />
                   </div>
+                  <p>ボタンを紹介を左上から右に紹介したいと思います</p>
+                  <ul class="initially__list">
+                    <li>文字の大きさ変更</li>
+                    <li>文字の高さ変更</li>
+                    <li>文字の間隔を変更</li>
+                    <li>文字の色を選択し変更</li>
+                    <li>文字枠の色を変更</li>
+                    <li>背景色の変更</li>
+                    <li>リンクハイライト</li>
+                    <li>コントラスト</li>
+                    <li>彩度調整</li>
+                    <li>アニメーションを停止</li>
+                    <li>画像非表示</li>
+                    <li>文字の位置を変更</li>
+                    <li>フォント変更</li>
+                    <li>カーソル変更</li>
+                  </ul>
+                  <br />
                   <p>
-                    こちらはお店の方の意向でコンクリートのおしゃれな建物とお店の雰囲気をサイトに表示したいと要望がありこのような作りにしました。スライドにはJavascriptのswiperを使用してスライドショーを作成しています。初めはただの横スライドで作成しましたが、ちょっと古いサイトに見えること高級感に欠けることから最終的に作り変えました。スライドが変化するたびに少しずつ写真がアップされていきます。
+                    このようなボタンでサイト内の見え方を変更することができます。 下記は細かな点な説明をしたいと思います。
                   </p>
                 </div>
                 <div class="introduction__card">
                   <div class="introduction__imgbox">
-                    <h3 class="introduction__title">メニューバー</h3>
-                    <img src="./image/WebP/menubar.webp" alt="メニューバー" />
+                    <h3 class="introduction__title">色変更</h3>
                   </div>
                   <p>
-                    メニューは使いやすさ重視で考えました。
-                    position:sticky,を使って追従するようにしました。<br />
-                    まずは左側の<br />
-                    <span> ”ショップロゴ”</span>　トップページに戻れます。<br />
-                    <span>”NEWS”</span
-                    >　トップページのニュースの欄に飛びます。<br />
-                    <span>”CATEGORY”</span
-                    >　マウスカーソルを合わせると下にカテゴリーリストが表示されます。こちらはJSで作成しました。リストをクリックすると商品リストが検索された状態で表示されます。<br />
-                    <span>“BRAND”</span
-                    >　”CATEGORY”と同じような感じになっています。この辺りはEC-CUBEの変数を使用して作成しています。<br />
-                    <span>“ABOUT”</span
-                    >　トップページのお店の情報がのっている所へ飛びます。<br /><br />
-                    携帯の時はハンバーガーメニューでカテゴリーとブランドを確認できます。<br />
-                    次にアイコンのところです。
-                    左から”マイアカウント、お気に入り、検索、カートとなっています。
-                    マイアカウントは別ページに飛びます。EC-CUBEの機能でアカウント登録が出来るので、その機能を活用しています。お気に入り商品を登録したり、住所等を登録でき購入時に手間を省くことができます。検索はカテゴリ・ブランド・タグ・キーワード検索に対応しています。タグ検索については私が新たに機能をつけました。セール・オススメ商品を検索が出来ることが重要だと考えたのでつけてよかったと思います。カートは商品をカートにいくつ入れているかと商品の合計の値段を確認できます。クリックするとカートページに飛ぶことができます。
+                    色変更にはjsのpickrを使用しました。 input=colorで実装は可能でしたが、jsのライブラリがあったので使って見たいと言う点とUIデザインが完成されていて機能の追加を簡単にできる点から使用することに至りました。 デフォルトカラーを設定があったり、リセットをできるようにしています。
                   </p>
                 </div>
                 <div class="introduction__card">
-                  <h3 class="introduction__title">NEWS（ブログ）</h3>
-                  <div class="introduction__imgbox">
-                    <img src="./image/WebP/blog.webp" alt="ブログ" />
-                  </div>
+                  <h3 class="introduction__title">コントラストと彩度</h3>
                   <p>
-                    NEWSはブログページです。
-                    EC-CUBEで機能を導入したくて、調べて色々してみましたが導入できませんでした。代案で浮かんだのがWordPressとmicroCMSです。microCMSは触った事がなく、WordPressはブログを作成する時に使用したので、投稿ページの使いやすさ等を知っているのもありWordPressで導入することにしました。サイトへの表示はrestAPIで表示させています。(phpで読み込んでtwigに変数で呼び出す）WordPressはテーマcocoonを作って簡易的に作成しました。
+                    cssのfilterで実現しているのですが、管理するうえでjsで更新する際に上書きされています点があり少し悩みました。cssのroot:を使うことで重ねがけを実現させています。
                   </p>
                 </div>
                 <div class="introduction__card">
-                  <h3 class="introduction__title">
-                    お気に入り商品・セール商品
-                  </h3>
+                  <h3 class="introduction__title">フォントの変更</h3>
                   <p>
-                    次にお気に入り商品とセール商品です。こちらはEC-CUBEのタグ機能を使用して登録しています。
-                    表示する場合はタグIDを指定した後に商品の変数を引っ張ればできます。
+                    フォントの変更は簡単でしたが、失読症の方のフォントを適用されるようにしました。 日本語が”Sans
+                    Comic Suns”英語が”Open-Dyslexic”で表示されています。
                   </p>
                 </div>
                 <div class="introduction__card">
-                  <h3 class="introduction__title">新作商品</h3>
+                  <h3 class="introduction__title">カーソル</h3>
                   <p>
-                    次に新作商品です。こちらは商品の登録降順で表示しています。
-                    もっと見るをクリックすると商品リストページに飛ぶことができます。
-                  </p>
-                </div>
-                <div class="introduction__card">
-                  <h3 class="introduction__title">フッター</h3>
-                  <div class="introduction__imgbox">
-                    <img src="./image/WebP/footer.webp" alt="フッター" />
-                  </div>
-                  <p>
-                    最後にフッターです。<br />
-                    フッターはレイアウトを特に綺麗にするように心がけました。PC・タブレット。スマートフォンとレイアウトがどのメディアでも綺麗に見れます。<br />
-                    InstagramとLINEのショップカードを確認出来るようにしています。
-                    カレンダーはお店の意向で表示させて欲しいとのことで、EC-CUBEでカレンダー機能があるのでそちらを使用して表示させています。予定がある日は後から追加することができます。<br />
-                    また下部の当サイトについて、プライバシーポリシー、特定商取引法に基づく表記、お問い合わせは全て記入してあります。お問い合わせも送信可能となっています。
+                    1クッリクで画像の適用。2クリックでカーソルの上下にカバーが掛けられてADHDの方に適用されたfilterが付きます。
                   </p>
                 </div>
               </div>
             </div>
-            <div class="initially__box">
-              <h2 class="initially__title">運用予定</h2>
-              <p>
-                等サイトは運用予定です。今は慎重にクレジット決済の契約をすすめています。また脆弱性の確認とセキュリティ面の確認をすすめております。商品登録はすでに300近く登録しておりまだこれでも全てではないので引き続き頑張りたいと思います。
-              </p>
-            </div>
-            <div class="initially__box">
-              <h2 class="initially__title">学習してきた１年間と新たな挑戦</h2>
-              <p>
-                学習してきた1年間を全て出しきり、新たな技術にも挑戦したくさんの経験をできたと思います。EC-CUBEはとても難しくてすごく悩みました。phpをほぼ無知から始めここまでこれて良かったと思います。EC-CUBEのコニュニティのレベルも常連になってたりしたし、Googleで調べた量が多くて今見ると自分でも感銘を受けます。でも挑戦し色んな事を実装できた時は感動がすごくあります。この経験は間違いなく今後ECサイトを作る時に活かしていける経験だと感じています。
-              </p>
-              <br />
-              <p>
-                Googleの検索の履歴<br />
-                グループにしてまとめていた
-              </p>
 
-              <img src="./image/WebP/google.webp" alt="検索結果" />
-              <br />
-              <p>EC-CUBEコニュニティーレベル</p>
-              <img src="./image/WebP/EC-cube.webp" alt="EC-CUBE" />
-            </div>
             <div class="initially__box">
-              <h2 class="initially__title">これから</h2>
+              <h2 class="initially__title">反省</h2>
               <div class="initially__subcontent">
                 <h3 class="initially__subtitle">デザイン</h3>
                 <p>
-                  私は自我が強いところがあってこのようにしたほうがいいと思う所は曲げなかったりします。そこは今後治すところだと思います。論理思考が故の合わないのがわかってるとかで意見を聞く機会を逃したりするのはあまりよくないです。参考サイトはいっぱい見ていい所はたくさん盗んで、実現していく。今回のサイトではそのようにしています。今後もこの習慣はつけていきたいと思います。また私はアクセントカラーに弱いように感じています。カラーを意識して作ることもデザインへの一歩だと思うのでもっと気を配り作るべきかなと思いました。
+                  フルスクリーンでのデザインとなった為要素は最低限でしなければならなかったということもあり難しかった。画像の上に文字を配置している関係上コントラスト比の調整が難しい。アクセシビリティ特化のサイトにはならなかった。ただフルスクリーンの利点的に制作作品とメニューのダイナミックな表示がいい点。作品は大きく見えるのでギャラリー見たくいい感じる。また、ボタンのUIは参考を調べ作成したがいい感じに見やすいと思った。今回は色んな人にURLを送付してフィードバックをもらった。その中でいいものができたと思う。
                 </p>
               </div>
               <div class="initially__subcontent">
                 <h3 class="initially__subtitle">コーディング</h3>
                 <p>
-                  コーディングはhtmlは構想を気にしながら、css綺麗にBEMでまとめあげました。Javascriptは基本的に難しいことはしてないですが、わからないことが出てきた時はchatAIを通して確認をしていました。今回はphpとSymfonyがとても難しくそこに悩まされました。ただ、フロントからバックエンドの情報に触れたことで出来る事は見えるので楽しい言語であることを知ることもできました。いずれバックエンドの勉強も深く知りたいなと思います。まずはフロント面Javascriptと今後やっていきたいReactの学習を頑張りたいと思います。
-                  あとECサイトはSEO,サイトスピードは命なのでこの方面でhtml,css,jsの学習をもっと深めるべきとも感じました。
+                  コーディング面はhtmlとcssと特に今回は気を使いどのようにするかだいたい決めてからコーディングをしました。結果アクセシビリティボタンの作成の成功とに至りました。ただ今回で悪い点もあったと思ったのはhtmlのアクセシビリティに考慮がかけている。デザインのは位置的にコントラスト比の考えに至れていないといった点です。正直アクセシビリティに特化サイトにするのならばそこに配慮すべき点だと思いました。 コーディングと言いつつデザインですが正直もう少し構築を考えるべきだと思いました。
                 </p>
               </div>
               <div class="initially__subcontent">
-                <h3 class="initially__subtitle">マーケティング</h3>
+                <h3 class="initially__subtitle">Javascript</h3>
                 <p>
-                  ここが一番ネックだと感じました。正直ほぼ無知のままペルソナとかは考えず作成をしたところ（一応知っているお店なので気にして作成はしました）、売上観点、広告方法等全てすごく浅いなと感じました。今回は、技術の向上の為頑張ったところもありますが、この観点は商売をしていくうえで必ず必要になってくると思いますし、ECサイト作成者なら知っていても損はない知識だと感じています。ただ、正直コーディングも一気に知識をつけるのは不可能なので今年の後期あたりに検定・資格を取りたいなと思います。
+                  今回のいい点は、Javascriptのライブラリを活用してたくさんの機能をつけたこと、swiperは前回使用したことがありその時はもっと簡単なスライドでしたが今回は複雑なスライドを作成できました。またアクセシビリティのボタンの機能を全て実現できたことです。こちらは関数に入れ実現することを努力しました。AIの使用は惜しみなくしましたが使用した場合は必ずコードの理解をしてから使用するようにしています。今後も色んなツール、ドキュメントを確認し開発をしていきたいと思います。
                 </p>
               </div>
             </div>

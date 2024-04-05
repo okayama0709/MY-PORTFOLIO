@@ -130,6 +130,9 @@ $breakpoints: (
       background-color: #da4404;
     }
   }
+  &__list {
+    list-style: disc;
+  }
 
   & p,
   ul {
@@ -175,6 +178,13 @@ $breakpoints: (
     }
     &__imgbox {
       margin-bottom: 25px;
+      width: fit-content;
+      height: fit-content;
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
     }
   }
   &__subcontent {

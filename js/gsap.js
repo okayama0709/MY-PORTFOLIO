@@ -8,9 +8,8 @@ document.querySelectorAll(".career dl").forEach((dl) => {
       end: "-30px center",
       scrub: true,
     },
-    // CSS変数のアニメーション
     "--scale-y": 1,
-    duration: 4,
+    // duration: 4,
     ease: "none",
   });
 });
