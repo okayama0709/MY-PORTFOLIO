@@ -146,81 +146,81 @@ h6 {
 }
 
 // テキストアニメーション
-.swiper-slide.anm-started .slide-date {
-  animation: mv02-fadeIn 1s forwards;
-  animation-delay: 0s; /* 日付のアニメーション遅延 */
-}
-.swiper-slide.anm-started .slide-text {
-  animation: mv02-fadeIn 1s forwards;
-  animation-delay: 0.5s; /* テキストのアニメーション遅延 */
-}
-.swiper-slide.anm-started .slide-title {
-  animation: mv02-fadeInText 1s forwards;
-  animation-delay: 0.9s; /* タイトルのアニメーション遅延 */
-}
-.swiper-slide.anm-started .slide-view {
-  animation: mv02-fadeIn 1s forwards;
-  animation-delay: 1.3s; /* ビューのアニメーション遅延 */
-}
-.swiper-slide.anm-finished .slide-title {
-  animation: mv02-fadeOutText 0.8s forwards;
-}
-.swiper-slide.anm-finished .slide-text,
-.swiper-slide.anm-finished .slide-link,
-.swiper-slide.anm-finished .slide-date,
-.swiper-slide.anm-finished .slide-view {
-  animation: mv02-fadeOut 0.8s forwards;
-}
+// .swiper-slide.anm-started .slide-date {
+//   animation: mv02-fadeIn 1s forwards;
+//   animation-delay: 0s; /* 日付のアニメーション遅延 */
+// }
+// .swiper-slide.anm-started .slide-text {
+//   animation: mv02-fadeIn 1s forwards;
+//   animation-delay: 0.5s; /* テキストのアニメーション遅延 */
+// }
+// .swiper-slide.anm-started .slide-title {
+//   animation: mv02-fadeInText 1s forwards;
+//   animation-delay: 0.9s; /* タイトルのアニメーション遅延 */
+// }
+// .swiper-slide.anm-started .slide-view {
+//   animation: mv02-fadeIn 1s forwards;
+//   animation-delay: 1.3s; /* ビューのアニメーション遅延 */
+// }
+// .swiper-slide.anm-finished .slide-title {
+//   animation: mv02-fadeOutText 0.8s forwards;
+// }
+// .swiper-slide.anm-finished .slide-text,
+// .swiper-slide.anm-finished .slide-link,
+// .swiper-slide.anm-finished .slide-date,
+// .swiper-slide.anm-finished .slide-view {
+//   animation: mv02-fadeOut 0.8s forwards;
+// }
 
-@keyframes mv02-fadeInText {
-  0% {
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, 50%);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    opacity: 1;
-  }
-}
-@keyframes mv02-fadeIn {
-  0% {
-    -webkit-transform: translateY(3.5rem);
-    transform: translateY(3.5rem);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+// @keyframes mv02-fadeInText {
+//   0% {
+//     -webkit-transform: translate(-50%, -50%);
+//     transform: translate(-50%, 50%);
+//     opacity: 0;
+//   }
+//   100% {
+//     -webkit-transform: translate(-50%, -50%);
+//     transform: translate(-50%, -50%);
+//     opacity: 1;
+//   }
+// }
+// @keyframes mv02-fadeIn {
+//   0% {
+//     -webkit-transform: translateY(3.5rem);
+//     transform: translateY(3.5rem);
+//     opacity: 0;
+//   }
+//   100% {
+//     -webkit-transform: translateY(0);
+//     transform: translateY(0);
+//     opacity: 1;
+//   }
+// }
 
-@keyframes mv02-fadeOutText {
-  0% {
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translate(-50%, -250%);
-    transform: translate(-50%, -450%);
-    opacity: 0;
-  }
-}
-@keyframes mv02-fadeOut {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateY(-6rem);
-    transform: translateY(-6rem);
-    opacity: 0;
-  }
-}
+// @keyframes mv02-fadeOutText {
+//   0% {
+//     -webkit-transform: translate(-50%, -50%);
+//     transform: translate(-50%, -50%);
+//     opacity: 1;
+//   }
+//   100% {
+//     -webkit-transform: translate(-50%, -250%);
+//     transform: translate(-50%, -450%);
+//     opacity: 0;
+//   }
+// }
+// @keyframes mv02-fadeOut {
+//   0% {
+//     -webkit-transform: translateY(0);
+//     transform: translateY(0);
+//     opacity: 1;
+//   }
+//   100% {
+//     -webkit-transform: translateY(-6rem);
+//     transform: translateY(-6rem);
+//     opacity: 0;
+//   }
+// }
 #textAnimation span {
   display: inline-block; /* ブロック要素として扱う */
   opacity: 0; /* 初期状態では非表示 */
@@ -496,7 +496,6 @@ h6 {
   -o-object-fit: cover;
   object-fit: cover;
 }
-
 .mv {
   &__area {
     position: relative;
@@ -565,52 +564,10 @@ h6 {
     @include mq(smm) {
       height: (250em/16);
     }
-    & svg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      stroke-width: 5;
-    }
-  }
-  & .slide-date {
-    font-size: (16rem/16);
-    display: block;
-    text-shadow: var(--font-linerBorder);
-    @include mq(lg) {
-      font-size: (14rem/16);
-    }
-  }
-  & .slide-text {
-    font-size: (28rem/16);
-    margin: 0.4em 0 0 0;
-    text-shadow: var(--font-linerBorder);
-    @include mq(lg) {
-      font-size: (24rem/16);
-    }
-  }
-
-  & .slide-title {
-    position: absolute;
-    z-index: 9999;
-    width: 100%;
-    word-break: keep-all;
-    top: 50%;
-    left: 50%;
-    font-size: (38rem/16);
-    text-shadow: var(--font-linerBorder);
-    transform: translate(-50%, -50%);
-    margin-bottom: 1em;
-    @include mq(lg) {
-      font-size: (34rem/16);
-      word-break: keep-all;
-    }
-    @include mq(smm) {
-      font-size: (28rem/16);
-    }
   }
   & .slide-view {
     position: relative;
-    margin: auto auto 0;
+    margin: auto;
     text-shadow: var(--font-linerBorder);
     width: fit-content;
     @include mq(lg) {

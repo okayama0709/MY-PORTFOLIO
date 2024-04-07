@@ -1,49 +1,49 @@
 let mySwiper_main;
 let isHovered = false; // ホバー状態を追跡するフラグ
-const myDelay = 5500;
+const myDelay = 1111115500;
 let timer;
 
-// スライダー全体にホバーイベントリスナーを追加
-const slider = document.querySelector(".swiper-main");
-slider.addEventListener("mouseover", () => {
-  isHovered = true;
-});
-slider.addEventListener("mouseout", () => {
-  isHovered = false;
-});
+// // スライダー全体にホバーイベントリスナーを追加
+// const slider = document.querySelector(".swiper-main");
+// slider.addEventListener("mouseover", () => {
+//   isHovered = true;
+// });
+// slider.addEventListener("mouseout", () => {
+//   isHovered = false;
+// });
 
-// スタートアニメーションとエンドアニメーションのクラス追加
-let isAnimationRunning = true; // アニメーションが実行中かどうかを追跡
-let isAnimationPaused = false; // アニメーションが一時停止されているかどうか
+// // スタートアニメーションとエンドアニメーションのクラス追加
+// let isAnimationRunning = true; // アニメーションが実行中かどうかを追跡
+// let isAnimationPaused = false; // アニメーションが一時停止されているかどうか
 
-const switchAnimation = () => {
-  if (isAnimationPaused) return; // アニメーションが一時停止されていれば実行しない
+// const switchAnimation = () => {
+//   if (isAnimationPaused) return; // アニメーションが一時停止されていれば実行しない
 
-  clearTimeout(timer);
-  let activeSlide = document.querySelectorAll(
-    ".swiper-main .swiper-slide[class*=-active]"
-  );
-  for (let i = 0; i < activeSlide.length; i++) {
-    activeSlide[i].classList.remove("anm-finished");
-    activeSlide[i].classList.add("anm-started");
-  }
-  timer = setTimeout(() => {
-    for (let i = 0; i < activeSlide.length; i++) {
-      activeSlide[i].classList.remove("anm-started");
-      activeSlide[i].classList.add("anm-finished");
-    }
-  }, myDelay - 300); // `myDelay`はあなたのアニメーション遅延時間変数
-};
+//   clearTimeout(timer);
+//   let activeSlide = document.querySelectorAll(
+//     ".swiper-main .swiper-slide[class*=-active]"
+//   );
+//   for (let i = 0; i < activeSlide.length; i++) {
+//     activeSlide[i].classList.remove("anm-finished");
+//     activeSlide[i].classList.add("anm-started");
+//   }
+//   timer = setTimeout(() => {
+//     for (let i = 0; i < activeSlide.length; i++) {
+//       activeSlide[i].classList.remove("anm-started");
+//       activeSlide[i].classList.add("anm-finished");
+//     }
+//   }, myDelay - 300); // `myDelay`はあなたのアニメーション遅延時間変数
+// };
 
-const finishAnimation = () => {
-  if (isAnimationPaused) return; // アニメーションが一時停止されていれば実行しない
+// const finishAnimation = () => {
+//   if (isAnimationPaused) return; // アニメーションが一時停止されていれば実行しない
 
-  let activeSlide = document.querySelectorAll(".mv .swiper-slide.anm-started");
-  for (let i = 0; i < activeSlide.length; i++) {
-    activeSlide[i].classList.remove("anm-started");
-    activeSlide[i].classList.add("anm-finished");
-  }
-};
+//   let activeSlide = document.querySelectorAll(".mv .swiper-slide.anm-started");
+//   for (let i = 0; i < activeSlide.length; i++) {
+//     activeSlide[i].classList.remove("anm-started");
+//     activeSlide[i].classList.add("anm-finished");
+//   }
+// };
 
 //swiperのjs
 const mySwiper_thumb = new Swiper(".mv .swiper-thumb", {
@@ -89,14 +89,14 @@ mySwiper_main = new Swiper(".mv .swiper-main", {
   //   },
   // },
 
-  on: {
-    slideChange: () => {
-      finishAnimation();
-    },
-    slideChangeTransitionStart: () => {
-      switchAnimation();
-    },
-  },
+  // on: {
+  //   slideChange: () => {
+  //     finishAnimation();
+  //   },
+  //   slideChangeTransitionStart: () => {
+  //     switchAnimation();
+  //   },
+  // },
 });
 
 //ダブルクリックでメインのURL
