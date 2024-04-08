@@ -602,8 +602,8 @@ h6 {
       padding: 0;
     }
     @include mq(smm) {
-      margin: 2.5em 5% 0 5%;
-      height: 38%;
+      // margin: 2.5em 5% 0 5%;
+      height: 45%;
     }
     & .swiper-slide {
       height: 130px !important;
@@ -697,7 +697,7 @@ h6 {
   & .thumb-media img {
     -webkit-transition: 0.3s;
     transition: 0.5s;
-    filter: grayscale(60%) brightness(0.8);
+    filter: grayscale(60%) brightness(0.7);
     // opacity: 0.8;
   }
   //   image move
@@ -705,6 +705,12 @@ h6 {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     opacity: 0;
+  }
+  & .thumb-category {
+    font-size: 1rem;
+    @include mq(xl) {
+      font-size: 1rem;
+    }
   }
   & .thumb-title {
     font-size: 1.5rem;
@@ -723,7 +729,7 @@ h6 {
     @include mq(lg) {
       font-size: 0.9rem;
     }
-    @include mq(md) {
+    @include mq(lg) {
       font-size: 0.8rem;
     }
   }

@@ -48,7 +48,7 @@ let timer;
 //swiperのjs
 const mySwiper_thumb = new Swiper(".mv .swiper-thumb", {
   slidesPerView: 4,
-  spaceBetween: 26,
+  spaceBetween: 15,
   direction: "vertical",
   roundLengths: true,
   speed: 1300,
@@ -57,7 +57,7 @@ const mySwiper_thumb = new Swiper(".mv .swiper-thumb", {
   breakpoints: {
     601: {
       slidesPerView: 2,
-      spaceBetween: 10,
+      spaceBetween: 26,
     },
   },
   thumbs: {
@@ -68,7 +68,7 @@ const mySwiper_thumb = new Swiper(".mv .swiper-thumb", {
 mySwiper_main = new Swiper(".mv .swiper-main", {
   direction: "vertical",
   loop: true,
-  speed: 1500,
+  speed: 1200,
   loopAdditionalSlides: 1,
   allowTouchMove: false,
   autoplay: {

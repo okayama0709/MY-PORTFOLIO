@@ -650,8 +650,7 @@ h6 {
 }
 @media screen and (max-width: 450px) {
   .mv .swiper-thumb {
-    margin: 2.5em 5% 0 5%;
-    height: 38%;
+    height: 45%;
   }
 }
 .mv .swiper-thumb .swiper-slide {
@@ -736,11 +735,19 @@ h6 {
 }
 .mv .thumb-media img {
   transition: 0.5s;
-  filter: grayscale(60%) brightness(0.8);
+  filter: grayscale(60%) brightness(0.7);
 }
 .mv .swiper-slide-thumb-active .thumb-media img {
   transform: scale(1.1);
   opacity: 0;
+}
+.mv .thumb-category {
+  font-size: 1rem;
+}
+@media screen and (max-width: 1100px) {
+  .mv .thumb-category {
+    font-size: 1rem;
+  }
 }
 .mv .thumb-title {
   font-size: 1.5rem;
@@ -766,7 +773,7 @@ h6 {
     font-size: 0.9rem;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .mv .thumb-date {
     font-size: 0.8rem;
   }
