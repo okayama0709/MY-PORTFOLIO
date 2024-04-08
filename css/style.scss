@@ -518,22 +518,19 @@ h6 {
     font-size: (28rem/16);
     margin: 0.4em 0 0 0;
     text-shadow: var(--font-linerBorder);
+    word-break: keep-all;
+    white-space: nowrap;
     @include mq(lg) {
-      font-size: (24rem/16);
+      font-size: (22rem/16);
     }
   }
   & .slide-title {
-    position: absolute;
-    z-index: 9999;
     width: fit-content;
     word-break: keep-all;
     white-space: nowrap;
-    top: 50%;
-    left: 50%;
     font-size: (38rem/16);
     text-shadow: var(--font-linerBorder);
-    transform: translate(-50%, -50%);
-    margin-bottom: 1em;
+    margin: 0.4em 0;
     @include mq(lg) {
       font-size: (34rem/16);
       word-break: keep-all;
@@ -596,9 +593,10 @@ h6 {
     }
     @include mq(md) {
       position: initial;
-      height: 30%;
+      height: 40%;
       width: 90%;
-      margin: 1em 5% 0 5%;
+      margin-top: 1em;
+      padding: 0 5% 0 5%;
       padding: 0;
     }
     @include mq(smm) {
@@ -708,6 +706,7 @@ h6 {
   }
   & .thumb-category {
     font-size: 1rem;
+
     @include mq(xl) {
       font-size: 1rem;
     }
@@ -716,7 +715,6 @@ h6 {
     font-size: 1.5rem;
     position: relative;
     z-index: 1;
-    margin-bottom: 0.4em;
     @include mq(lg) {
       font-size: 1.2rem;
     }
@@ -730,7 +728,7 @@ h6 {
       font-size: 0.9rem;
     }
     @include mq(lg) {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
     }
   }
 }
