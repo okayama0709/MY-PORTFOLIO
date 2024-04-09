@@ -1,6 +1,6 @@
 let mySwiper_main;
 let isHovered = false; // ホバー状態を追跡するフラグ
-const myDelay = 1111115500;
+const myDelay = 5500;
 let timer;
 
 // // スライダー全体にホバーイベントリスナーを追加
