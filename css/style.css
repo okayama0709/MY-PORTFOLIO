@@ -86,7 +86,7 @@ h1 {
   text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.4);
   position: absolute;
   z-index: 99999;
-  top: 35%;
+  top: 50%;
   left: 5%;
   transform: translate(0%, -50%);
 }
