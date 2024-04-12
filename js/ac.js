@@ -442,47 +442,30 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // アニメーションストップ
-// const anmStopElement = document.getElementById("anmStop");
-// anmStopElement.addEventListener("click", () => {
-//   isAnimationPaused = !isAnimationPaused; // アニメーションの一時停止状態を切り替え
+// マウスオーバーで自動再生を停止
+let isAnimationPaused = false; // この変数を全体のスコープで定義する
+const anmStopElement = document.getElementById("anmStop");
+mySwiper_main.el.addEventListener("mouseover", () => {
+  mySwiper_main.autoplay.stop();
+});
 
-//   if (isAnimationPaused) {
-//     // アニメーションを一時停止
-//     clearTimeout(timer);
-//   } else {
-//     // アニメーションを再開
-//     switchAnimation();
-//   }
-// });
-// document.addEventListener("DOMContentLoaded", () => {
-//   const anmStopElement = document.getElementById("anmStop");
-//   let isAnimationRunning = true; // アニメーションが実行中かどうかを追跡するフラグ
-//   const slideContents = document.querySelectorAll(".slide-content > *"); // `.slide-content`の子要素を全て選択
+// マウスアウトで、isAnimationPaused フラグが false の場合のみ自動再生を開始
+mySwiper_main.el.addEventListener("mouseout", () => {
+  if (!isAnimationPaused) {
+    mySwiper_main.autoplay.start();
+  }
+});
 
-//   anmStopElement.addEventListener("click", () => {
-//     if (isAnimationRunning) {
-//       // アニメーションが実行中の場合、停止する
-//       mySwiper_main.autoplay.stop();
-//       Array.from(slideContents).forEach((child) => {
-//         if (child.tagName.toLowerCase() !== "svg") {
-//           // SVG要素を除外
-//           child.style.opacity = 1;
-//         }
-//       });
-//     } else {
-//       // アニメーションが停止している場合、開始する
-//       mySwiper_main.autoplay.start();
-//       Array.from(slideContents).forEach((child) => {
-//         if (child.tagName.toLowerCase() !== "svg") {
-//           // SVG要素を除外
-//           child.style.opacity = 0; // ここでは例として0.5に設定していますが、必要に応じて調整
-//         }
-//       });
-//     }
-//     // アニメーションの状態を反転
-//     isAnimationRunning = !isAnimationRunning;
-//   });
-// });
+// ストップボタンのクリックイベント
+anmStopElement.addEventListener("click", () => {
+  isAnimationPaused = !isAnimationPaused; // アニメーションの一時停止状態を切り替え
+
+  if (isAnimationPaused) {
+    mySwiper_main.autoplay.stop();
+  } else {
+    mySwiper_main.autoplay.start();
+  }
+});
 
 // イメージの除去
 document.addEventListener("DOMContentLoaded", () => {

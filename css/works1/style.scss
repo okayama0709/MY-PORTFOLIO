@@ -38,15 +38,15 @@ $breakpoints: (
 }
 
 .performance {
-  margin-top: 110px;
+  margin-top: 80px;
   margin-left: (50/960) * 100%;
   &__box {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   &__title {
     margin-bottom: 20px;
-    font-size: (20rem/16);
-    padding: 10px;
+    font-size: (18rem/16);
+    padding: 5px 10px;
     width: fit-content;
     background-color: #226367;
     font-weight: 500;
@@ -55,7 +55,7 @@ $breakpoints: (
   p,
   ul {
     padding-left: 10px;
-    font-size: (16rem/16);
+    font-size: (14rem/16);
     font-weight: 300;
   }
   &__link {

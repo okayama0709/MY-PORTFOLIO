@@ -23,16 +23,16 @@
 }
 
 .performance {
-  margin-top: 110px;
+  margin-top: 80px;
   margin-left: 5.2083333333%;
 }
 .performance__box {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .performance__title {
   margin-bottom: 20px;
-  font-size: 1.25rem;
-  padding: 10px;
+  font-size: 1.125rem;
+  padding: 5px 10px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -43,7 +43,7 @@
 .performance p,
 .performance ul {
   padding-left: 10px;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 300;
 }
 .performance__link {
