@@ -62,8 +62,11 @@ $breakpoints: (
   --scale-y: 0; /* 初期スケール値 */
   --text-align: ;
 }
-
+* {
+  box-sizing: border-box;
+}
 html {
+  overflow: visible;
   font-family: var(--font-family);
   font-size: var(--font-size);
   background-color: var(--bg-color);
@@ -398,6 +401,9 @@ h6 {
 
 .main {
   display: block;
+  @include mq(md) {
+    height: fit-content;
+  }
 }
 
 // タブキーでの選択
@@ -432,6 +438,9 @@ h6 {
   object-fit: cover;
 }
 .mv {
+  @include mq(md) {
+    height: fit-content;
+  }
   &__area {
     position: relative;
     @include mq(md) {
@@ -461,6 +470,7 @@ h6 {
       margin: 0;
       border-radius: 0;
       width: 100%;
+      height: 40vh;
     }
   }
   & .slide {
@@ -586,20 +596,21 @@ h6 {
     bottom: 10em;
     width: min(35vw, 43vw);
     height: 94%;
-    padding: 0 1.5em;
+    // padding: 0 1.5em;
     @include mq(xl) {
       width: min(40vw);
     }
     @include mq(md) {
-      position: initial;
+      position: static;
       height: 40%;
-      width: 90%;
+      width: 100%;
       margin-top: 1em;
-      padding: 0 5% 0 5%;
+      // padding: 0 5% 0 5%;
       padding: 0;
     }
     @include mq(smm) {
-      height: 45%;
+      height: 34vh;
+      margin-top: 1vh;
     }
     & p {
       margin: 0;
@@ -617,14 +628,19 @@ h6 {
   }
 
   & .swiper-wrapper.thumb-scroll {
-    overflow-y: scroll;
+    overflow-y: auto !important;
     row-gap: 0rem;
+    width: 100%;
     height: 650px;
     padding-left: 2em;
     transform: translateY(0px) !important;
+    z-index: 99;
+
     @include mq(md) {
       height: 100%;
       padding: 0;
+      width: 90%;
+      margin-inline: auto;
     }
     &::-webkit-scrollbar {
       background: transparent;
@@ -651,17 +667,20 @@ h6 {
     transition: 0.5s;
     color: var(--font-color);
     @include mq(xxl) {
-      width: 80%;
+      width: 98%;
+    }
+    @include mq(xl) {
+      width: 97%;
     }
     @include mq(lg) {
-      width: 70%;
+      width: 97%;
     }
     @include mq(md) {
       margin: 0 auto;
-      width: 85%;
+      width: 95%;
     }
     @include mq(smm) {
-      width: 80%;
+      width: 100%;
     }
   }
   & .thumb::before {
@@ -752,6 +771,10 @@ h6 {
   padding: (30em /16) 0 (10em/16) 0;
   margin: 0 auto 0;
   text-align: right;
+  @include mq(smm) {
+    height: 7vh;
+    padding: 1.5vh 0;
+  }
 }
 .accessible {
   border: 0;
