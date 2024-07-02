@@ -84,7 +84,6 @@ ol {
 }
 
 h1 {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-size: 2.375rem;
@@ -143,16 +142,6 @@ h6 {
 }
 
 /* キーフレームアニメーション */
-@-webkit-keyframes fadeInBlurOut {
-  from {
-    opacity: 0;
-    filter: blur(5px);
-  }
-  to {
-    opacity: 1;
-    filter: blur(0);
-  }
-}
 @keyframes fadeInBlurOut {
   from {
     opacity: 0;
@@ -165,15 +154,7 @@ h6 {
 }
 /* アニメーション適用 */
 .visible {
-  -webkit-animation: fadeInBlurOut 0.5s forwards;
-          animation: fadeInBlurOut 0.5s forwards;
-}
-
-@-webkit-keyframes moveUp {
-  to {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
+  animation: fadeInBlurOut 0.5s forwards;
 }
 
 @keyframes moveUp {
@@ -184,10 +165,8 @@ h6 {
 }
 /* アニメーションが適用された後のスタイル */
 .move-up {
-  -webkit-animation: moveUp 1s forwards;
-          animation: moveUp 1s forwards; /* アニメーションを実行し終了後に状態を維持 */
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation: moveUp 1s forwards; /* アニメーションを実行し終了後に状態を維持 */
+  animation-delay: 0.5s;
 }
 
 .header {
@@ -208,7 +187,6 @@ h6 {
   margin: 0 auto 0;
 }
 .header__wrap a {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -265,8 +243,7 @@ h6 {
   transform: translateY(-5px);
 }
 .menu:hover .menu__center {
-  -webkit-animation: menu-anime 2s ease infinite;
-          animation: menu-anime 2s ease infinite;
+  animation: menu-anime 2s ease infinite;
 }
 .menu:hover .menu__bottom {
   transform: translateY(5px);
@@ -285,17 +262,6 @@ h6 {
   transform: rotate(-45deg);
   bottom: 49%;
   height: 1px;
-}
-
-@-webkit-keyframes menu-anime {
-  0% {
-    width: 80%;
-    right: 10%;
-  }
-  50% {
-    width: 70%;
-    left: 15%;
-  }
 }
 
 @keyframes menu-anime {
@@ -385,8 +351,7 @@ h6 {
 .f-Menu.menu__active {
   pointer-events: initial;
   opacity: 100%;
-  -webkit-animation: bgAnime 0.5s forwards;
-          animation: bgAnime 0.5s forwards;
+  animation: bgAnime 0.5s forwards;
 }
 .f-Menu.menu__active .f-Menu__list div::after {
   transform: scale(1, 1);
@@ -395,18 +360,9 @@ h6 {
   transform: scale(1, 1);
 }
 
-@-webkit-keyframes bgAnime {
-  0% {
-    background-color: hsla(0deg, 0%, 64.7%, 0);
-  }
-  100% {
-    background-color: #a5a5a5;
-  }
-}
-
 @keyframes bgAnime {
   0% {
-    background-color: hsla(0deg, 0%, 64.7%, 0);
+    background-color: hsla(0, 0%, 64.7%, 0);
   }
   100% {
     background-color: #a5a5a5;
@@ -417,7 +373,6 @@ h6 {
 }
 @media screen and (max-width: 600px) {
   .main {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
@@ -457,7 +412,6 @@ h6 {
 
 @media screen and (max-width: 600px) {
   .mv {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
@@ -487,7 +441,6 @@ h6 {
   .mv .swiper-main {
     margin: 0 auto;
     width: 90%;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     border-radius: 10px;
@@ -570,7 +523,6 @@ h6 {
   }
 }
 .mv .slide-title {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   word-break: keep-all;
@@ -594,7 +546,6 @@ h6 {
   position: relative;
   margin: auto auto 0;
   text-shadow: var(--font-linerBorder);
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-size: 1rem;
@@ -613,16 +564,7 @@ h6 {
   height: auto;
   top: 5%;
   right: -25%;
-  -webkit-animation: arrow 2s infinite;
-          animation: arrow 2s infinite;
-}
-@-webkit-keyframes arrow {
-  0%, 100% {
-    transform: translateX(0px);
-  }
-  50% {
-    transform: translateX(5px);
-  }
+  animation: arrow 2s infinite;
 }
 @keyframes arrow {
   0%, 100% {
@@ -690,6 +632,12 @@ h6 {
   padding-left: 2em;
   transform: translateY(0px) !important;
   z-index: 99;
+}
+@media screen and (max-width: 1300px) {
+  .mv .swiper-wrapper.thumb-scroll {
+    width: 94%;
+    padding-left: 2em;
+  }
 }
 @media screen and (max-width: 600px) {
   .mv .swiper-wrapper.thumb-scroll {
@@ -1436,9 +1384,13 @@ h6 {
   word-break: auto-pharase;
   font-size: 1.25rem;
   font-weight: 300;
+  -moz-column-count: 2;
+       column-count: 2;
 }
 @media screen and (max-width: 600px) {
   .target__content {
+    -moz-column-count: 1;
+         column-count: 1;
     font-size: 1rem;
   }
 }
@@ -1471,10 +1423,14 @@ h6 {
 .hobby__content {
   font-size: 1.25rem;
   font-weight: 300;
+  -moz-column-count: 2;
+       column-count: 2;
 }
 @media screen and (max-width: 600px) {
   .hobby__content {
     font-size: 1rem;
+    -moz-column-count: 1;
+         column-count: 1;
   }
 }
 
@@ -1510,10 +1466,13 @@ h6 {
   word-break: auto-pharase;
   font-size: 1.25rem;
   font-weight: 300;
+  -moz-column-count: 2;
+       column-count: 2;
 }
 @media screen and (max-width: 600px) {
   .story__content {
+    -moz-column-count: 1;
+         column-count: 1;
     font-size: 1rem;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

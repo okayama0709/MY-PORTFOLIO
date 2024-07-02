@@ -292,7 +292,6 @@ picker.on("save", (color, instance) => {
     console.log("No color selected.");
   }
 });
-
 picker.on("cancel", (instance) => {
   instance.hide();
 });

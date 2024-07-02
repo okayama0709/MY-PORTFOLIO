@@ -596,7 +596,6 @@ h6 {
     bottom: 10em;
     width: min(35vw, 43vw);
     height: 94%;
-    // padding: 0 1.5em;
     @include mq(xl) {
       width: min(40vw);
     }
@@ -635,6 +634,10 @@ h6 {
     padding-left: 2em;
     transform: translateY(0px) !important;
     z-index: 99;
+    @include mq(xxl) {
+      width: 94%;
+      padding-left: 2em;
+    }
 
     @include mq(md) {
       height: 100%;
@@ -1359,8 +1362,9 @@ h6 {
     font-size: (20rem/16);
     font-weight: 300;
     // line-height: 1.8em;
-
+    column-count: 2;
     @include mq(md) {
+      column-count: 1;
       font-size: (16rem/16);
     }
   }
@@ -1391,9 +1395,10 @@ h6 {
     font-size: (20rem/16);
     // line-height: 1.8em;
     font-weight: 300;
-
+    column-count: 2;
     @include mq(md) {
       font-size: (16rem/16);
+      column-count: 1;
     }
   }
 }
@@ -1426,8 +1431,10 @@ h6 {
     word-break: auto-pharase;
     font-size: (20rem/16);
     font-weight: 300;
+    column-count: 2;
     // line-height: 1.8em;
     @include mq(md) {
+      column-count: 1;
       font-size: (16rem/16);
     }
   }

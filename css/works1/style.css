@@ -33,7 +33,6 @@
   margin-bottom: 20px;
   font-size: 1.125rem;
   padding: 5px 10px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   background-color: #226367;
@@ -43,7 +42,7 @@
 .performance p,
 .performance ul {
   padding-left: 10px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 .performance__link {
@@ -92,7 +91,6 @@
 }
 .site__scroll {
   margin-top: 80px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: 620px;
@@ -111,7 +109,6 @@
 }
 .initially__title {
   font-weight: 400;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-size: 1.5rem;
@@ -149,7 +146,6 @@
   margin-bottom: 60px;
 }
 .initially .introduction__title {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   position: relative;
@@ -180,10 +176,8 @@
 }
 .initially .introduction__imgbox {
   margin-bottom: 25px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -197,7 +191,6 @@
   margin-bottom: 30px;
 }
 .initially__subtitle {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   position: relative;
@@ -235,5 +228,4 @@
 }
 .top:hover {
   text-decoration: none;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
