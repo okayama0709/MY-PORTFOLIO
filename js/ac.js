@@ -10,6 +10,7 @@ backbtn.addEventListener("click", () => {
   accessible.classList.toggle("active");
   accessibleMenu.classList.toggle("active");
 });
+
 // チェックボックス
 document.addEventListener("DOMContentLoaded", () => {
   const switch1 = document.getElementById("switch1");
@@ -41,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // // span にブラック付与
-// span に黒色を追加し、最後に全て削除
 const classToggle = function (clickCount, spans) {
   // clickCountに応じてspanに"black"クラスを追加
   spans.forEach((span, index) => {
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // 文字サイズ
 function adjustTextSize(triggerElementId, cssVariableName, sizesArray) {
-  let clickCount = 0; // クリック回数を追跡する変数
+  let clickCount = 0;
   const triggerElement = document.getElementById(triggerElementId);
 
   triggerElement.addEventListener("click", () => {
